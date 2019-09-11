@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar_layout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/toolbar"/>
+
+
+    <com.mapbox.mapboxsdk.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+    />
+
+    <ImageView
+            android:id="@+id/userLocation"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitEnd"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            app:srcCompat="@drawable/user_location"
+            mapbox:layout_constraintRight_toRightOf="parent"
+            mapbox:layout_constraintBottom_toTopOf="@id/button"
+            android:layout_marginStart="10dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            android:scaleType="center"
+            mapbox:fabSize="normal"
+            android:backgroundTint="@android:color/white"
+            android:src="@drawable/ic_format_list_bulleted_black_24dp"
+            mapbox:layout_constraintBottom_toBottomOf="parent"
+            mapbox:layout_constraintRight_toRightOf="parent"
+            android:layout_marginEnd="16dp"/>
+
+    <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            mapbox:layout_constraintBottom_toBottomOf="parent"
+            mapbox:layout_constraintLeft_toLeftOf="parent"
+            mapbox:layout_constraintRight_toRightOf="parent"
+            mapbox:layout_constraintHorizontal_bias="1.0"/>
+</android.support.constraint.ConstraintLayout>

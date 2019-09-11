@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PinMe</string>
+    <string name="access_token">pk.eyJ1IjoicGFydmF0aGlqa2siLCJhIjoiY2swY2tjYmtrMTV6MjNjcjczbTQ5MnY4eCJ9.lzKuP1wlheEpUcCbDJ2puA</string>
+    <string name="permission_explanation">Enable the permission from the app level by going to the settings in your mobile</string>
+    <string name="location_not_permitted">User not permitted</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+</resources>

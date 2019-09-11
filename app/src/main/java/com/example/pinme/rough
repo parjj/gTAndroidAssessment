@@ -1,0 +1,34 @@
+
+
+////
+////
+////                    symbolManager!!.create(
+////                        SymbolOptions()
+////                            .withLatLng(LatLng(lat, lon))
+////                    )
+//
+
+//
+//
+//
+//
+//      //   symbols= symbolManager!!.create(options) as ArrayList<Symbol>
+//               //  for loop ending
+
+
+
+//  mapbox.addMarkers(markers)
+
+
+//move camera
+//mapbox.moveCamera(CameraUpdateFactory.newLatLngZoom(latLong, 17.0))
+
+// list of markers as deprecrated
+//                    markers.add(
+//                        MarkerOptions()
+//                            .position(LatLng(lat, lon))
+//                            .title(pin.name)
+//                    )
+
+
+
